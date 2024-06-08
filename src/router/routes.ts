@@ -25,6 +25,11 @@ const routes: RouteRecordRaw[] = [
     component:()=> import('layouts/MainLayout.vue'),
     children:[{path:'',component:() => import('pages/BlogList.vue')}]
   },
+  {
+    path:'/invite',
+    component:()=> import('layouts/MainLayout.vue'),
+    children:[{path:'',component:() => import('pages/ColabPage.vue')}]
+  },
   // Always leave this as last one,
   // but you can also remove it
   {
